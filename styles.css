@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Changed to black */
+    color: #fff; /* Changed to white for text */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    background-color: #333; /* Darker background for the container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 500px;
+    height: 400px;
+}
+
+.sidebar, .main-content {
+    width: 100%;
+    padding: 10px;
+}
+
+.sidebar h1, .main-content h2 {
+    margin: 10px 0;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.input-group label {
+    margin-right: 10px;
+}
+
+.sidebar input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #555; /* Darker input background */
+    color: #fff;
+}
+
+.sidebar button, .main-content button, .small-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.sidebar button:hover, .main-content button:hover, .small-button:hover {
+    background-color: #0056b3;
+}
+
+.current-timer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#current-timer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#current-timer, #current-timer-active {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #444; /* Darker timer background */
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.timer-ended {
+    background-color: #ccffcc; /* Light green background for ended timer */
+    color: #006400; /* Dark green text color */
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
